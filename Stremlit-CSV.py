@@ -21,7 +21,6 @@ st.markdown('''
 ### Choose your filters 
 ''')
 filtered = Filter.filter_dataframe(df)
-st.write()
 st.write(filtered)
 
 
@@ -38,13 +37,13 @@ st.download_button(
 
 )
 st.markdown('''
-## Graf
+## Graph
 ''')
 
 filtered_notnull = filtered.dropna()
 option = st.selectbox(
      'Select What do you want so see',
-    ('Timestamp','Value1','Temp1','Temp2','Temp3','Globalstrahlung','Gehaeusetemp','Windgeschw','Windrichtung','Lufttemperatur','rel Feuchte','Taupunkttemp','Luftdruck abs','Luftdruck red','Helligkeit Nord','Helligkeit Ost','Helligkeit Sued','Helligkeit West','Helligkeit','Niederschlag','NiedIntensitaet','NiedSumme','Niederschlagsart','Sonne Elevation','Sonne Azimut','Globalstrahlung'))
+    ('Value1','Temp1','Temp2','Temp3','Globalstrahlung','Gehaeusetemp','Windgeschw','Windrichtung','Lufttemperatur','rel Feuchte','Taupunkttemp','Luftdruck abs','Luftdruck red','Helligkeit Nord','Helligkeit Ost','Helligkeit Sued','Helligkeit West','Helligkeit','Niederschlag','NiedIntensitaet','NiedSumme','Niederschlagsart','Sonne Elevation','Sonne Azimut','Globalstrahlung'))
 
 
 
