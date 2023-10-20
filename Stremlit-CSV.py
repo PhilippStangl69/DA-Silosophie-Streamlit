@@ -20,7 +20,7 @@ filtered = Filter.filter_dataframe(df)
 st.write()
 st.write(filtered)
 
-st.line_chart(filtered)
+st.line_chart(filtered['Timestamp']['Temp'])
 
 st.markdown('''
 #### Download here!
