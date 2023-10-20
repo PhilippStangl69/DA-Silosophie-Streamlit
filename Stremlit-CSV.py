@@ -19,6 +19,9 @@ st.markdown('''
 filtered = Filter.filter_dataframe(df)
 st.write()
 st.write(filtered)
+
+st.line_chart(filtered)
+
 st.markdown('''
 #### Download here!
 ''')
