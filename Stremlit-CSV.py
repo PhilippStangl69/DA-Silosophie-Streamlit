@@ -2,9 +2,6 @@ import streamlit as st
 import pandas as pd
 from datetime import datetime
 import Filter
-import seaborn as sns
-import matplotlib.pyplot as plt
-import Plot
 import streamlit.components.v1 as components
 
 
